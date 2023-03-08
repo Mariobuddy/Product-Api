@@ -1,0 +1,51 @@
+
+[
+    {
+        "name":"Xbox",
+        "price":30000,
+        "stars":4.4,
+        "description":"Xbox is very good console to use",
+        "images":"http://localhost:3000/profile/profile_1678251900659.png"
+    },
+    {
+        "name":"Gaming PC",
+        "price":80000,
+        "stars":4.8,
+        "description":"Gaming PC is very good platform to use"
+    },
+    {
+        "name":"Laptop",
+        "price":100000,
+        "stars":4.6,
+        "description":"Laptop is very portable way to use"
+    },
+    {
+        "name":"Playstation",
+        "price":20000,
+        "stars":4.2,
+        "description":"Playstation is very good and portable console to use",
+        "feature":true
+    },
+    {
+        "name":"Mac",
+        "price":20000,
+        "stars":4.2,
+        "description":"Mac is very good and portable console to use",
+        "feature":true
+    },
+    {
+        "name":"Mac2",
+        "price":20000,
+        "stars":4.2,
+        "description":"Mac is very good and portable console to use",
+        "feature":true
+    },
+    {
+        "name":"Mac 3",
+        "price":20000,
+        "stars":4.2,
+        "description":"Mac is very good and portable console to use",
+        "feature":true
+
+    }
+]
