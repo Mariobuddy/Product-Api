@@ -1,6 +1,7 @@
 const express=require('express');
 const app=express();
 const PORT=process.env.PORT||3000;
+let cors=require('cors');
 require('./Database/Connection');
 const Product_router=require('./Routes/routes');
 const ConnectDB=require('./Database/Connection');
@@ -21,6 +22,16 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.get('/',(req,res)=>{
     res.send('Hello from server');
 });
+
+app.use((req,res,next)=>{
+  res.setHeader('Access-Control-Allow-Origin','*');
+  res.setHeader('Access-Control-Allow-Methods','GET,POST,PUT,PATCH,DELETE');
+  res.setHeader('Access-Control-Allow-Methods','Content-Type','Authorization');
+  next(); 
+})
+
+
+app.use(cors());
 
 const storage=multer.diskStorage({
   destination:'./upload',
